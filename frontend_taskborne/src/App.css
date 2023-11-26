@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Moutains of Christimas';
+  src: url('/public/MountainsofChristmas-Bold.ttf') format('truetype');
+
+}
+
+.font-mountains-of-christmas {
+  font-family: 'Moutains of Christimas', cursive;
+}

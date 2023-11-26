@@ -1,0 +1,17 @@
+{
+  "name": "taskborne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd backend_taskborne && npm run dev",
+    "start:prisma": "cd backend_taskborne && npx prisma studio",
+    "start:frontend": "cd frontend_taskborne && npm run dev",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

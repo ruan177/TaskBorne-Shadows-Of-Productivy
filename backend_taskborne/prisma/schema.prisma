@@ -1,0 +1,44 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Adicione um enum para representar os tipos de lista
+enum CardStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+}
+
+model User {
+  id       String   @id @default(uuid())
+  username String
+  email    String?  @unique
+  profileImageUrl    String?
+  password String
+  projects Project[]
+}
+
+model Project {
+  id          String   @id @default(uuid())
+  name        String
+  iconUrl     String?
+  description String?
+  author      User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId    String
+  cards      Card[]
+}
+
+
+
+model Card {
+  id        String   @id @default(uuid())
+  title     String
+  status    CardStatus
+  projectId    String
+  project      Project     @relation(fields: [projectId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+}
