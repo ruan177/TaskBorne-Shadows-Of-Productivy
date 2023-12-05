@@ -17,6 +17,6 @@ A interface do Board oferece uma visão holística dos projetos em andamento, pr
 ### Projetos
 ![Projetos](https://i.imgur.com/YZD0bwe.png)
 
-A seção de Projetos oferece uma visão detalhada de cada projeto, fornecendo informações essenciais, colaboradores envolvidos e o andamento geral.
+A seção de Projetos oferece uma visão simplesa de cada projeto, fornecendo informações essenciaisl.
 
 Este projeto busca não apenas atender aos requisitos acadêmicos, mas também criar uma experiência de usuário eficiente e inspiradora, alinhada com a atmosfera única de Bloodborne. Sua estrutura, baseada em tecnologias modernas, visa garantir um desenvolvimento sólido e escalável.
